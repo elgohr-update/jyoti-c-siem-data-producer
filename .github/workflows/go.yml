@@ -27,7 +27,7 @@ jobs:
       run: docker build . --file Dockerfile --tag yjagdale/siem-data-producer:1.0.0-SNAPSHOT
 
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: yjagdale/siem-data-producer
         username: ${{ secrets.DOCKERHUB_USERNAME }}
